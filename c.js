@@ -1,3 +1,4 @@
+var tmp=""
 var url_token='https://'+document.URL.split('/')[2]+'/mailService/JavaScriptServlet.do'
 var httpRequest = new XMLHttpRequest();
 httpRequest.open('POST',url_token,true);
@@ -6,8 +7,8 @@ httpRequest.onreadystatechange = function ()
 {
 	if (httpRequest.readyState == 4 && httpRequest.status == 200)
 		{
-			r=httpRequest.responseText.split(":")[1];
-			csrfadd(r);
+			tmp=httpRequest.responseText.split(":")[1];
+			csrfadd(tmp);
 		}
 }
 
